@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-08-06 at 12.20.47 AM copy.png" alt="About Me">
+    <p>Hi, I am Taranveer Singh Gill. I am 24 years old and was born in Kolkata, West Bengal, India. I completed my schooling from Delhi Public School, Gandhidham. Growing up, my father ran an auto parts shop, which gave me a lot of exposure to mechanical things and cars from a young age. That’s what ignited my desire to pursue Mechanical Engineering, and I went on to do my bachelor's from Vellore Institute of Technology.</p>
+    <p>In the four years of my bachelor’s, I didn’t confine myself just to studies. I actively participated in extracurricular activities and represented my college in an international competition called Baja SAE held in the USA, where our team ranked 4th worldwide. That remains one of my best memories from college. I also spent many great evenings on campus playing badminton almost every day and became quite a pro at it later on.</p>
+    <p>But one day, while working on a project with students from multiple departments, we combined our knowledge and designed a drone to clean algae from water bodies. The drone was built using mechanical design software, and OpenCV was used for image processing to detect algae. That experience opened a whole new world to me, making me curious to learn more about this field of technology and data.</p>
+    <p>Later, I got a job as a Data Validation Engineer at Numeros Motors, where I worked for around a year. My role involved managing and analyzing large datasets from testing and validation processes to ensure the systems met specifications. I also implemented data visualization skills by creating clear and informative charts and reports, effectively communicating results to stakeholders and cross-functional teams.</p>
+    <p>After gaining some experience, I decided to pursue my Master’s in Data Science from the University at Buffalo (SUNY), USA which was honestly one of the best decisions of my career. I got to learn so many concepts in depth that are essential to becoming a proficient data scientist. Unlike my bachelor’s, I didn’t play any sports here because I realized that freedom comes with responsibility. I worked on campus to manage my expenses and I’m thankful to the university for that opportunity.</p>
+    <p>I truly believe I’ve learned a lot since I came to the USA. But now, I’m eager to put all my skills and knowledge to real-world use and work for a company that gives me the opportunity to improve and prove myself.</p>
+  </div>
+</section>
+      
+<!-- Work Experience Section -->
+<section id="experience" class="experience-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Work Experience</h2>
+    <div class="row">
+      
+      <!-- Job 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <!-- Big Logo -->
+            <img src='/Users/taranveersinghgill/Documents/My website/images/Numeros-Logo.png' alt="Numeros Motors Logo" style="width:200px; height:auto; margin-bottom:20px;">
+            
+            <!-- Job Title and Company -->
+            <h5 class="card-title">Data Validation Engineer</h5>
+            <h6 class="card-subtitle text-muted mb-3">Numeros Motors | [Nov,2022 – Dec,2023]</h6>
+            
+            <!-- Description -->
+            <p class="card-text">
+              Worked on Project Orion, focused on launching a two-wheeler EV into the market. My role involved conducting vehicle testing, collecting and analyzing test results, and comparing them against government regulations. Later, I communicated these findings to other departments and key stakeholders to support compliance and decision-making.
+            </p>
+
+            <!-- Skills Section -->
+            <h6 class="mt-3">Key Skills Gained:</h6>
+            <p class="text-start d-inline-block">
+              <strong>Data handling and analysis</strong><br>
+              <strong>SQL</strong> for structured querying and reporting<br>
+              <strong>Excel</strong> for data cleaning, aggregation, and comparison<br>
+              <strong>Data visualization</strong> for presenting results effectively<br>
+              <strong>Communication</strong> and cross-functional collaboration
+            </p>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Job 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <!-- Big Logo -->
+            <img src='/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-09-07 at 2.44.18 PM.png' alt="Company Logo" style="width:200px; height:auto; margin-bottom:20px;">
+
+            <!-- Job Title and Company -->
+            <h5 class="card-title">Data scientist</h5>
+            <h6 class="card-subtitle text-muted mb-3">Model Earth | [Aug, 2025 – ]</h6>
+
+            <!-- Description -->
+            <p class="card-text">
+              Worked on acquiring and integrating large datasets from Google Data Commons, Exiobase, CEDA, and Census APIs. Built Python and SQL pipelines for data processing, developed machine learning forecasting models, and deployed results through full-stack web applications and cloud databases.
+            </p>            
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/Users/taranveersinghgill/Documents/My website/images/output.png" class="card-img-top" alt="Famous Personality Image Classification">
+          <div class="card-body">
+            <h5 class="card-title">Famous Personality Image Classification</h5>
+            <p class="card-text">A machine learning project that classifies images of 17 sports celebrities using computer vision. I applied face detection with OpenCV, wavelet-based feature extraction, and trained multiple models, selecting SVM as the best performer. The project demonstrates end-to-end ML skills from preprocessing to deployment.</p>
+            <a href="https://github.com/Taranveer-Singh-Gill/Famous-Personality-Image-Classification" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-08-25 at 2.41.33 PM.png" class="card-img-top" alt="Sales Performance Dashboard for Business Insights">
+          <div class="card-body">
+            <h5 class="card-title">Sales Performance Dashboard for Business Insights</h5>
+            <p class="card-text">An interactive Tableau dashboard project that visualizes sales and customer data to uncover key business insights. It provides dynamic filtering, profit and sales trends, top customers, and category-level performance, helping businesses track growth, identify opportunities, and make data-driven decisions.</p>
+            <a href="https://github.com/Taranveer-Singh-Gill/Sales-Performance-Dashboard-for-Business-Insights" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-08-25 at 3.01.47 PM.png" class="card-img-top" alt="Efficient Workforce Management Using Modern Database Architectures">
+          <div class="card-body">
+            <h5 class="card-title">Efficient Workforce Management Using Modern Database Architectures</h5>
+            <p class="card-text">A scalable employee management system built with relational database design and a Streamlit web interface. It streamlines HR, finance, and department operations by managing employee records, automating salary calculations, and enabling advanced querying with normalized schemas, indexing, and visual analytics.</p>
+            <a href="https://github.com/Taranveer-Singh-Gill/Efficient-Workforce-Management-Using-Modern-Database-Architectures" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src='/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-09-08 at 12.50.35 PM.png' class="card-img-top" alt="Credit Score Classification">
+          <div class="card-body">
+            <h5 class="card-title">Credit Score Classification</h5>
+            <p class="card-text">Developed a machine learning system to classify credit scores using a dataset of 150,000 records. Applied advanced data preprocessing, feature engineering, and evaluated models like Naive Bayes, KNN, and Random Forest, achieving 77.7% accuracy with Random Forest.</p>
+            <a href="https://github.com/Taranveer-Singh-Gill/Credit-Score-Classification" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src='/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-09-08 at 3.18.59 PM.png' class="card-img-top" alt="Drones for Cleaning Algae in Water Bodies">
+          <div class="card-body">
+            <h5 class="card-title">Drones for Cleaning Algae in Water Bodies</h5>
+            <p class="card-text">
+              Developed a quadcopter equipped with a Raspberry Pi camera for real-time algae monitoring. Used OpenCV for image processing and Mission Planner for precise flight path configuration. Conducted thrust, battery, and landing gear analysis to optimize UAV performance. Implemented KMeans clustering and color detection to extract dominant colors and convert RGB values to human-readable names.
+            </p>
+            <a href="https://github.com/Taranveer-Singh-Gill/Drones-for-Cleaning-Algae" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications" class="publications-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Publications</h2>
+    <div class="row justify-content-center">
+      
+      <!-- Publication 1 -->
+      <div class="col-md-8 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">AI Assistant for Document Management Using LangChain and Pinecone</h5>
+            <h6 class="card-subtitle text-muted mb-2">IRJMETS | 26/06/2023</h6>
+            <p class="card-text">
+              Built a PDF chatbot using <strong>LangChain</strong> and <strong>LLM</strong> to answer document-based queries, with <strong>Pinecone</strong> for vector storage. Integrated real-time data via <strong>Google Search</strong> and developed an intuitive <strong>React JS</strong> interface for seamless user interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- certifications Section -->
+<section id="certifications" class="certifications-section bg-white">
+  <div class="container">
+    <h2 class="text-center">Certifications</h2>
+    <div class="row">
+      <!-- Certificate 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src='/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-09-05 at 2.00.50 PM.png' class="card-img-top" alt="Machine Learning and Deep Learning Bootcamp in Python">
+          <div class="card-body">
+            <h5 class="card-title">Machine Learning and Deep Learning Bootcamp in Python</h5>
+            <a href="https://drive.google.com/file/d/1WnDr8_ZWuQSxE1TMto_zb2IjsjtUicGG/view?usp=sharing" class="btn btn-outline-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="/Users/taranveersinghgill/Documents/My website/images/images-11.png" class="card-img-top" alt="LeetCode SQL 50 Challenge – Completed ">
+          <div class="card-body">
+            <h5 class="card-title">LeetCode SQL 50 Challenge – Completed </h5>
+            <a href="https://leetcode.com/medal/?showImg=0&id=6941767&isLevel=false" class="btn btn-outline-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src='/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-09-05 at 2.33.33 PM.png' class="card-img-top" alt="Certified in Python – HackerRank (2023)">
+          <div class="card-body">
+            <h5 class="card-title">Certified in Python – HackerRank (2023)</h5>
+            <a href="https://drive.google.com/file/d/1RuIBZDyoTW_f0-oKFYX1sRWl81MUylNt/view?usp=sharing" class="btn btn-outline-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src='/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-09-05 at 2.41.17 PM.png' class="card-img-top" alt="Special Achievers for representing the institute at an International event">
+          <div class="card-body">
+            <h5 class="card-title">Special Achievers for representing the institute at an International event</h5>
+            <a href="https://drive.google.com/file/d/1Q3VbN58FyokFjXbdvnDLWXSp_SgYCPuT/view?usp=sharing" class="btn btn-outline-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 5 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src='/Users/taranveersinghgill/Documents/My website/images/Screenshot 2025-09-05 at 2.50.26 PM.png' class="card-img-top" alt="Certificate of Appreciation from Students Welfare">
+          <div class="card-body">
+            <h5 class="card-title">Certificate of Appreciation from Students Welfare</h5>
+            <a href="https://drive.google.com/file/d/1z-lp5QdS9l4UBTM_Q7B-ZI9BLZ9zG3O0/view?usp=sharing" class="btn btn-outline-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row text-center">
+      
+      <!-- Skill 1 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/Python-logo-notext.svg.png' alt="Python" class="img-fluid mb-2" style="height:60px;">
+        <p>Python</p>
+      </div>
+
+      <!-- Skill 2 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/SQL.png' alt="SQL" class="img-fluid mb-2" style="height:60px;">
+        <p>SQL</p>
+      </div>
+
+      <!-- Skill 3 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/Tableau_logo.png' alt="Tableau" class="img-fluid mb-2" style="height:60px;">
+        <p>Tableau</p>
+      </div>
+
+      <!-- Skill 4 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/Robot_thinking.jpg' alt="Machine Learning" class="img-fluid mb-2" style="height:60px;">
+        <p>Machine Learning</p>
+      </div>
+
+      <!-- Skill 5 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/download.jpeg' alt="Azure" class="img-fluid mb-2" style="height:60px;">
+        <p>Azure</p>
+      </div>
+
+      <!-- Skill 6 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/pax8-logo-aws.avif' alt="AWS" class="img-fluid mb-2" style="height:60px;">
+        <p>AWS</p>
+      </div>
+
+      <!-- Skill 7 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/hadoopelephant_rgb.webp' alt="Hadoop" class="img-fluid mb-2" style="height:60px;">
+        <p>Hadoop</p>
+      </div>
+
+      <!-- Skill 8 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/images.png' alt="Spark" class="img-fluid mb-2" style="height:60px;">
+        <p>Spark</p>
+      </div>
+
+      <!-- Skill 9 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/unnamed.png' alt="R" class="img-fluid mb-2" style="height:60px;">
+        <p>R</p>
+      </div>
+
+      <!-- Skill 10 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/MySQL-1024x683.png' alt="MySQL" class="img-fluid mb-2" style="height:60px;">
+        <p>MySQL</p>
+      </div>
+
+      <!-- Skill 11 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/Postgresql_elephant.svg' alt="PostgreSQL" class="img-fluid mb-2" style="height:60px;">
+        <p>PostgreSQL</p>
+      </div>
+
+      <!-- Skill 12 -->
+      <div class="col-lg-2 col-md-3 col-4 mb-4">
+        <img src='/Users/taranveersinghgill/Documents/My website/images/data-visualization.webp' alt="Data Visualization" class="img-fluid mb-2" style="height:60px;">
+        <p>Data Visualization</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>
+      <i class="fas fa-envelope"></i> tarangill1104@gmail.com |
+      <i class="fas fa-phone"></i> +1 716-398-8662 |
+      <a href="https://www.linkedin.com/in/taranveer-singh-gill-398b861a0/" target="_blank" class="text-white">
+        <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon"> LinkedIn
+      </a> |
+      <a href="https://github.com/Taranveer-Singh-Gill" target="_blank" class="text-white">
+        <img src="icons/github.png" alt="GitHub" class="social-icon"> GitHub
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
