@@ -27,6 +27,28 @@
     color: #333;
   }
 
+/* Kaggle Competitions Section */
+.kaggle-section {
+  padding: 60px 0;
+}
+
+.kaggle-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.kaggle-badge {
+  background-color: #20beff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.kaggle-rank {
+  font-weight: bold;
+  color: #28a745;
+}
   /* Additional CSS for Projects Section */
 .projects-section h2 {
   margin-bottom: 40px;
@@ -217,6 +239,59 @@ html {
 
 
     </div>
+  </div>
+</section>
+
+  
+<!-- Kaggle Competitions Section -->
+<section id="kaggle" class="kaggle-section bg-white">
+  <div class="container">
+    <h2 class="text-center">Kaggle Competitions</h2>
+
+    <div class="row">
+
+      <!-- Competition 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">House Prices – Advanced Regression</h5>
+              <span class="kaggle-badge">Kaggle</span>
+            </div>
+
+            <p class="card-text">
+              Built regression models to predict house prices using feature engineering,
+              missing-value handling, and ensemble methods.
+            </p>
+
+            <p class="mb-2">
+              <strong>Tech:</strong> Python, Pandas, Scikit-learn, XGBoost
+            </p>
+
+            <p class="kaggle-rank">
+              Top 2% globally — Ranked 84 among 5000+ participants
+            </p>
+
+            <a href="https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques"
+               target="_blank"
+               class="btn btn-outline-primary btn-sm">
+              View Competition
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Kaggle Profile Button -->
+    <div class="text-center mt-4">
+      <a href="https://www.kaggle.com/YOUR_KAGGLE_USERNAME"
+         target="_blank"
+         class="btn btn-primary">
+        View My Kaggle Profile
+      </a>
+    </div>
+
   </div>
 </section>
 
