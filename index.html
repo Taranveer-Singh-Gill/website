@@ -321,26 +321,37 @@ html {
       <div class="col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
+
             <div class="d-flex justify-content-between align-items-center mb-2">
               <h5 class="card-title mb-0">House Prices – Advanced Regression</h5>
               <span class="kaggle-badge">Kaggle</span>
             </div>
 
-            <p class="card-text">
-              Developed an end-to-end machine learning solution for predicting house prices.
-              Performed extensive exploratory data analysis (EDA) to understand feature
-              distributions and relationships with the target variable. Handled missing
-              values using KNN imputation and domain-aware defaults. Built a stacked ensemble
-              of tree-based models to reduce bias and variance, and evaluated performance
-              using validation splits and feature importance analysis.
-            </p>
+            <!-- Description in Points -->
+            <ul class="card-text ps-3">
+              <li>
+                Built a complete machine learning pipeline to predict house prices, taking the project from raw data to final model evaluation.
+              </li>
+              <li>
+                Performed in-depth exploratory data analysis (EDA) to understand feature distributions and their relationship with sale prices.
+              </li>
+              <li>
+                Handled missing values using a combination of <strong>KNN imputation</strong> and domain-informed assumptions.
+              </li>
+              <li>
+                Trained and tuned a <strong>stacked ensemble of tree-based models</strong> to improve accuracy and reduce overfitting.
+              </li>
+              <li>
+                Evaluated model performance using validation splits and feature importance analysis to guide improvements.
+              </li>
+            </ul>
 
             <p class="mb-2">
               <strong>Tech:</strong> Python, Pandas, NumPy, Scikit-learn, XGBoost, LightGBM, CatBoost
             </p>
 
             <p class="kaggle-rank">
-              Top 2% globally — Ranked 84 among 5000+ participants
+              <strong>Top 2% globally</strong> — Ranked 84 among 5,000+ participants
             </p>
 
             <a href="https://www.kaggle.com/tarangill1104"
@@ -348,14 +359,16 @@ html {
                class="btn btn-outline-primary btn-sm">
               View Competition
             </a>
+
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- Kaggle Profile Button -->
     <div class="text-center mt-4">
-      <a href="https://www.kaggle.com/YOUR_KAGGLE_USERNAME"
+      <a href="https://www.kaggle.com/tarangill1104"
          target="_blank"
          class="btn btn-primary">
         View My Kaggle Profile
