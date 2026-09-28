@@ -1,593 +1,382 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Section</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Taranveer Singh Gill | Data Engineer</title>
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
 
 <style>
-  .about-section {
-    text-align: left;
-    padding: 50px 0;
-  }
-  .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .about-section img {
-    width: 240px; /* Adjust the size as needed */
-    height: 360px;
-    object-fit: cover;
-    border-radius: 0; /* Makes the image round */
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    color: #333;
-  }
-
-/* Kaggle Competitions Section */
-.kaggle-section {
-  padding: 60px 0;
-}
-
-.kaggle-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.kaggle-badge {
-  background-color: #20beff;
-  color: white;
-  padding: 5px 10px;
-  font-size: 0.8rem;
-  border-radius: 20px;
-}
-
-.kaggle-rank {
-  font-weight: bold;
-  color: #28a745;
-}
-  /* Additional CSS for Projects Section */
-.projects-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.card {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
-}
-.card-img-top {
-  max-height: 180px; /* Adjust this value to fit the image properly in the card */
-  object-fit: cover; /* This makes sure the image covers the area properly */
-}
-.card-body {
-  padding: 15px;
-}
-.card-title {
-  font-size: 1.25rem;
-}
-.card-text {
-  margin-bottom: 15px;
-}
-
-/* Additional CSS for Skills Section */
-.skills-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.skills-section .card-img-top {
-  padding: 20px; /* Add padding around your images if needed */
-  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-  height: 180px; /* Fixed height for consistency */
-  object-fit: contain; /* This will make sure the image is scaled properly within the container */
-}
-.skills-section .card-body {
-  padding: 15px;
-}
-.skills-section .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-}
-.skills-section .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
-}
-.skills-section .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-/* Additional CSS for Contact Section */
-.contact-section {
-  padding: 50px 0;
-}
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.social-icon {
-  width: 50px; /* Size of your icons */
-  margin-bottom: 10px;
-}
-/* Hover effect for icons */
-.social-icon:hover {
-  opacity: 0.7;
-}
-/* Style for links in the Contact section */
-.contact-section a {
-  color: #fff;
-  text-decoration: none; /* Removes underline from links */
-  display: inline-block; /* Allows for margin on the bottom */
-  margin-bottom: 10px;
-}
-.contact-section a:hover {
-  color: #ddd; /* Color when hovering over the link */
-}
-
-/* CSS for Sticky Navbar */
-.navbar {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-}
-
-/* Ensure padding is added to body to avoid content being hidden behind the navbar */
-body { 
-  padding-top: 56px; /* Adjust this value based on the height of your navbar */
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Style for navigation bar links */
-.navbar-nav .nav-link {
-  color: white;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #f8f9fa; /* Slightly lighter white when hovering over links */
-}
-
-/* Media query for responsive navbar collapsing */
-@media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: #343a40; /* Same as navbar color for seamless look */
-  }
-}
-
-
-</style>
-
-</head>
-<body>
-
-<section id="about" class="about-section">
-  <div class="container">
-
-    <div class="row align-items-center">
-
-      <!-- Left: Image -->
-      <div class="col-md-4 text-center mb-4 mb-md-0">
-        <img src="profile2.png" alt="About Me" class="img-fluid">
-      </div>
-
-      <!-- Right: Title + Full Text -->
-      <div class="col-md-8 text-start">
-        <h2 class="mb-4">About</h2>
-        <p>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--ink:#15243b;--muted:#64748b;--accent:#2463eb;--accent2:#0e9ac4;--line:#e2eaf3;--paper:#f6f9fd;--navy:#0c1930}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{padding-top:72px;margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff;line-height:1.7}h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Space Grotesk',sans-serif;letter-spacing:-.035em}h2{font-size:clamp(2rem,3.5vw,2.65rem);font-weight:700;margin-bottom:36px!important}section{padding:86px 0!important}section.bg-light{background:var(--paper)!important}section.bg-white{background:#fff!important}a{color:var(--accent)}a:hover{color:#1747b0;text-decoration:none}.container{max-width:1120px}.navbar{background:rgba(12,25,48,.96)!important;box-shadow:0 8px 28px rgba(8,20,44,.12);padding:13px 0;backdrop-filter:blur(16px)}.navbar-brand{font-weight:700;font-size:1.2rem}.navbar-brand span{color:#72c9ff}.navbar-nav .nav-link{color:#dbe6f6!important;font-size:.88rem;font-weight:600;margin-left:8px;transition:color .2s}.navbar-nav .nav-link:hover{color:#8ed9ff!important}.navbar-toggler{border-color:#526782}.hero{background:radial-gradient(circle at 85% 20%,rgba(54,121,239,.28),transparent 34%),linear-gradient(135deg,#0b1830,#142d52 68%,#10223c);color:#fff;position:relative;overflow:hidden;padding:110px 0 100px!important}.hero:after{content:'';position:absolute;width:420px;height:420px;border:1px solid rgba(161,204,255,.15);border-radius:50%;right:-110px;top:-170px;pointer-events:none}.eyebrow{display:inline-block;letter-spacing:.13em;text-transform:uppercase;font-size:.76rem;font-weight:700;color:#7bd9ff;margin-bottom:20px}.hero h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.08;font-weight:700;letter-spacing:-.055em;max-width:850px}.hero h1 em{font-style:normal;color:#85caff}.hero p{max-width:680px;color:#c6d6ed;font-size:1.1rem;margin:22px 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{border-radius:11px;font-weight:700;padding:10px 18px;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--accent);border-color:var(--accent)}.btn-secondary{background:#eaf1ff;border-color:#eaf1ff;color:#2452a3}.btn-secondary:hover{background:#dce9ff;border-color:#dce9ff;color:#1747b0}.btn-outline-primary{border-color:#bed0f7;color:var(--accent)}.hero .btn-outline-light{border-color:#8098b7;color:#fff}.hero .btn-outline-light:hover{color:var(--navy);background:#fff}.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px;color:#c2d4eb;font-size:.85rem}.hero-meta span{padding:7px 13px;border:1px solid rgba(191,213,245,.24);border-radius:999px}.about-section img{width:100%;max-width:310px;height:370px;object-fit:cover;border-radius:22px;box-shadow:0 18px 45px rgba(15,38,72,.15)}.about-section p{color:#52627a;font-size:1.01rem}.about-section h2{text-align:left}.card{border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 28px rgba(16,40,75,.055);overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;background:#fff}.card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(16,40,75,.11);border-color:#cadbf3}.card-body{padding:24px}.card-title{font-size:1.16rem;font-weight:700;line-height:1.35}.card-subtitle{font-size:.9rem;line-height:1.6;color:var(--muted)!important}.card-text{color:#52627a;font-size:.94rem;line-height:1.75}.card-text li{margin-bottom:10px}.card-text li::marker{color:var(--accent)}.experience-section .row{max-width:980px;margin:0 auto}.experience-section .card{border-left:4px solid var(--accent)}.experience-section .card-body{padding:30px 34px}.experience-section .card-body>div.text-center{text-align:left!important}.experience-section .card-body>div.text-center img{width:auto!important;max-width:180px;height:60px!important;object-fit:contain;object-position:left;margin-bottom:16px!important}.experience-section .card-title{font-size:1.35rem}.experience-section ul{padding-left:22px!important;margin-top:22px}.projects-section .row>[class*='col-']{display:flex}.projects-section .card{width:100%;display:flex;flex-direction:column}.projects-section .card-img-top{height:190px;object-fit:cover;background:#eef3fa}.projects-section .card-body{display:flex;flex-direction:column;gap:10px}.projects-section .card-text{margin-bottom:4px}.projects-section .card-body>a.btn{align-self:flex-start;margin-top:auto}.projects-section .card-body>a.btn+a.btn{margin-top:0}.publications-section .card img{max-height:300px;object-fit:contain}.certifications-section .row>[class*='col-']{display:flex}.certifications-section .card{width:100%;display:flex;flex-direction:column}.certifications-section .card-img-top{height:155px;object-fit:contain;padding:22px;background:#f8fbff}.certifications-section .card-body{display:flex;flex-direction:column;gap:12px}.certifications-section .card-body .btn{margin-top:auto;align-self:flex-start}.skills-section .row>div{padding:12px}.skills-section .row>div img{width:65px;height:65px!important;object-fit:contain;transition:transform .2s}.skills-section .row>div:hover img{transform:translateY(-5px)}.skills-section .row>div p{font-weight:600;font-size:.9rem;margin:8px 0 0}.contact-section{background:linear-gradient(135deg,#0b1830,#19365d)!important}.contact-section h2{color:#fff}.contact-section p{color:#dce7f5;font-size:1rem;line-height:2.4}.contact-section a{color:#e2f1ff!important}.contact-section .social-icon{width:24px;height:24px;object-fit:contain;margin:0 4px 0 8px}.section-intro{text-align:center;color:var(--muted);max-width:620px;margin:-19px auto 35px}.footer-note{color:#a9bdd6;font-size:.85rem;margin-top:25px}@media(max-width:767px){section{padding:60px 0!important}.hero{padding:80px 0 75px!important}.experience-section .card-body{padding:23px}.navbar-nav .nav-link{margin-left:0}.about-section h2{text-align:center}.contact-section p{font-size:.9rem}.hero h1{font-size:2.65rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style><meta content="Taranveer Singh Gill — Data Engineer portfolio featuring cloud data engineering, Azure, Databricks, analytics and machine learning projects." name="description"/></head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#home">Taran<span>.</span></a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav><section class="hero" id="home"><div class="container"><span class="eyebrow">Data engineering · Cloud · Applied AI</span><h1>Hi, I'm <em>Taranveer Singh Gill.</em><br/> I build data systems that deliver.</h1><p>Data Engineer working with Azure, Databricks, PySpark and SQL to turn complex data into reliable pipelines and actionable insights.</p><div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore projects ↗</a><a class="btn btn-outline-light" href="#contact">Get in touch</a><a class="btn btn-outline-light" href="https://github.com/Taranveer-Singh-Gill" rel="noopener noreferrer" target="_blank">GitHub ↗</a></div><div class="hero-meta"><span>Azure &amp; Databricks</span><span>ETL / ELT</span><span>Data platforms</span><span>Machine learning</span></div></div></section>
+<section class="about-section" id="about">
+<div class="container">
+<div class="row align-items-center">
+<!-- Left: Image -->
+<div class="col-md-4 text-center mb-4 mb-md-0">
+<img alt="About Me" class="img-fluid" src="profile2.png"/>
+</div>
+<!-- Right: Title + Full Text -->
+<div class="col-md-8 text-start">
+<h2 class="mb-4">About</h2>
+<p>
           I'm <strong>Taranveer Singh Gill</strong>, a Data Engineer who enjoys building things that make data useful. I like working on scalable pipelines, cloud technologies, and data platforms that help turn raw information into something people can actually use to make better decisions.
         </p>
-        
-        <p>
+<p>
           In my current role at <strong>DEEPDATA INC</strong>, I develop Azure-based data pipelines, build ETL/ELT workflows with Databricks and PySpark, and design analytics-ready data models using Azure Synapse and Power BI. Before transitioning into data engineering, I worked as a Data Scientist in the electric vehicle industry, where I developed predictive models and dashboards to improve battery performance and support engineering decisions.
         </p>
-        
-        <p>
+<p>
           My technical interests span data engineering, cloud technologies, distributed data processing, and applied machine learning. I enjoy solving complex data challenges, optimizing pipelines, and building systems that enable organizations to make better, data-driven decisions.
         </p>
-        
-        <p>
+<p>
           I'm always looking for opportunities to learn new technologies, collaborate on impactful projects, and contribute to building reliable, scalable data solutions.
         </p>
-      </div>
-    </div> 
-  </div>
+</div>
+</div>
+</div>
 </section>
-
-  
 <!-- Work Experience Section -->
-<section id="experience" class="experience-section bg-light">
-  <div class="container">
-    <h2 class="text-center">Work Experience</h2>
-    <div class="row">
-      
-      <!-- Job 1 -->
-      <div class="col-12 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-      
-            <!-- Big Logo -->
-            <div class="text-center">
-              <img src="DeepData INC.png" alt="DeepData INC Logo" style="width:200px; height:auto; margin-bottom:20px;">
-            </div>
-      
-            
-            <!-- Job Title and Company -->
-            <h5 class="card-title">Data Engineer</h5>
-            <h6 class="card-subtitle text-muted mb-3">
-              DeepData INC | Jun 2025 – Present <br>
+<section class="experience-section bg-light" id="experience">
+<div class="container">
+<h2 class="text-center">Work Experience</h2><p class="section-intro">A look at the teams and technologies behind my work.</p>
+<div class="row">
+<!-- Job 1 -->
+<div class="col-12 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<!-- Big Logo -->
+<div class="text-center">
+<img alt="DeepData INC Logo" src="DeepData INC.png" style="width:200px; height:auto; margin-bottom:20px;"/>
+</div>
+<!-- Job Title and Company -->
+<h5 class="card-title">Data Engineer</h5>
+<h6 class="card-subtitle text-muted mb-3">
+              DeepData INC | Jun 2025 – Present <br/>
               Irving, Texas, USA
             </h6>
-            
-            <!-- Responsibilities -->
-            <ul class="card-text ps-3">
-              <li>
+<!-- Responsibilities -->
+<ul class="card-text ps-3">
+<li>
                 Built and maintained <strong>Azure Data Factory pipelines</strong>
                 to migrate and ingest on-premises SQL Server data into
                 <strong>Azure Data Lake Storage Gen2</strong>, enabling scalable
                 cloud-based data processing.
               </li>
-              <li>
+<li>
                 Developed ETL/ELT workflows using
                 <strong>Azure Databricks (PySpark)</strong> to transform raw data
                 into curated Bronze, Silver, and Gold datasets for downstream
                 analytics, reducing manual data preparation by <strong>70%</strong>.
               </li>
-              <li>
+<li>
                 Designed and optimized data models in
                 <strong>Azure Synapse Analytics</strong> while delivering
                 Power BI dashboards to support business reporting and
                 decision-making.
               </li>
-              <li>
+<li>
                 Automated data pipeline orchestration, implemented incremental
                 data loads, and managed secure access using
                 <strong>Azure Key Vault</strong> and
                 <strong>Azure Active Directory</strong> to ensure reliable,
                 production-ready data operations.
               </li>
-            </ul>
-            </div>
-            </div>
-            </div>
-
-      <!-- Job 2 -->
-      <div class="col-12 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-      
-            <!-- Big Logo -->
-            <div class="text-center">
-              <img src="Numeros-Logo.png" alt="Numeros Motors Logo" style="width:200px; height:auto; margin-bottom:20px;">
-            </div>
-      
-            <!-- Job Title and Company -->
-            <h5 class="card-title">Data Analyst</h5>
-            <h6 class="card-subtitle text-muted mb-3">
-              Numeros Motors | Jan 2022 – Dec 2023 <br>
+</ul>
+</div>
+</div>
+</div>
+<!-- Job 2 -->
+<div class="col-12 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<!-- Big Logo -->
+<div class="text-center">
+<img alt="Numeros Motors Logo" src="Numeros-Logo.png" style="width:200px; height:auto; margin-bottom:20px;"/>
+</div>
+<!-- Job Title and Company -->
+<h5 class="card-title">Data Analyst</h5>
+<h6 class="card-subtitle text-muted mb-3">
+              Numeros Motors | Jan 2022 – Dec 2023 <br/>
               Bangalore, India
             </h6>
-      
-            <!-- Responsibilities -->
-            <ul class="card-text ps-3">
-              <li>
+<!-- Responsibilities -->
+<ul class="card-text ps-3">
+<li>
                 Worked on <strong>Project Orion</strong>, supporting the launch of a two-wheeler electric vehicle (EV) by collecting, cleaning, and analyzing large volumes of vehicle testing data to evaluate performance against government regulations.
               </li>
-              <li>
+<li>
                 Used <strong>SQL and Python</strong> to analyze raw testing data, identify performance trends, and validate compliance metrics, enabling data-driven design and regulatory decisions.
               </li>
-              <li>
+<li>
                 Built <strong>predictive maintenance models</strong> for lithium-ion batteries using sensor data analysis to forecast battery health and detect potential failures.
               </li>
-              <li>
+<li>
                 Developed <strong>analytical dashboards</strong> in Tableau and Excel to monitor battery performance across vehicle fleets and communicate testing insights to cross-functional teams.
               </li>
-            </ul>
-      
-          </div>
-        </div>
-      </div>
-      <!-- Job 3 -->
-      <div class="col-12 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-      
-            <!-- Big Logo -->
-            <div class="text-center">
-              <img src="mukkudal_robotics.png" alt="Mukkudal Robotics Logo" style="width:200px; height:auto; margin-bottom:20px;">
-            </div>
-      
-            <!-- Job Title and Company -->
-            <h5 class="card-title">Data Science Intern</h5>
-            <h6 class="card-subtitle text-muted mb-3">
-              Mukkudal Robotics | Jul 2021 – Dec 2021 <br>
+</ul>
+</div>
+</div>
+</div>
+<!-- Job 3 -->
+<div class="col-12 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<!-- Big Logo -->
+<div class="text-center">
+<img alt="Mukkudal Robotics Logo" src="mukkudal_robotics.png" style="width:200px; height:auto; margin-bottom:20px;"/>
+</div>
+<!-- Job Title and Company -->
+<h5 class="card-title">Data Science Intern</h5>
+<h6 class="card-subtitle text-muted mb-3">
+              Mukkudal Robotics | Jul 2021 – Dec 2021 <br/>
               Coimbatore, India
             </h6>
-      
-            <!-- Responsibilities -->
-            <ul class="card-text ps-3">
-              <li>
+<!-- Responsibilities -->
+<ul class="card-text ps-3">
+<li>
                 Developed <strong>machine learning models</strong> to classify autonomous robot navigation behavior using time-series ultrasound sensor data from 24 circularly arranged sensors, analyzing 5,400+ observations sampled at 9 Hz during wall-following navigation tasks.
               </li>
-              <li>
+<li>
                 Performed <strong>EDA and feature engineering</strong> on raw sensor signals, creating directional distance metrics (front, left, right, back) and identifying class imbalance using Python visualization tools.
               </li>
-              <li>
+<li>
                 Applied <strong>Fisher Score feature selection</strong> to identify the most discriminative sensors, reducing dimensionality from 24 to 7 key features for improved model efficiency.
               </li>
-              <li>
+<li>
                 Built and evaluated <strong>Logistic Regression, SVM, and MLP models</strong> using Scikit-learn, achieving 94% accuracy with a neural network and validating the nonlinear nature of robot navigation classification.
               </li>
-            </ul>
-      
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
 <!-- Publications Section -->
-<section id="publications" class="publications-section bg-light">
-  <div class="container">
-    <h2 class="text-center">Publications</h2>
-    <div class="row justify-content-center">
-      
-      <!-- Publication 1 -->
-      <div class="col-md-8 mb-4">
-        <div class="card h-100">
-
-          <!-- Publication Image -->
-          <div class="text-center p-3">
-            <img src="irjmets.jpg" 
-                 alt="AI Assistant for Document Management"
-                 style="max-width:100%; height:auto; border-radius:8px;">
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">
+<section class="publications-section bg-light" id="publications">
+<div class="container">
+<h2 class="text-center">Publications</h2>
+<div class="row justify-content-center">
+<!-- Publication 1 -->
+<div class="col-md-8 mb-4">
+<div class="card h-100">
+<!-- Publication Image -->
+<div class="text-center p-3">
+<img alt="AI Assistant for Document Management" src="irjmets.jpg" style="max-width:100%; height:auto; border-radius:8px;"/>
+</div>
+<div class="card-body">
+<h5 class="card-title">
               AI Assistant for Document Management Using LangChain and Pinecone
             </h5>
-
-            <h6 class="card-subtitle text-muted mb-2">
+<h6 class="card-subtitle text-muted mb-2">
               IRJMETS | 26/06/2023
             </h6>
-
-            <p class="card-text">
+<p class="card-text">
               Built a PDF chatbot using <strong>LangChain</strong> and <strong>LLM</strong> to answer document-based queries, with <strong>Pinecone</strong> for vector storage. Integrated real-time data via <strong>Google Search</strong> and developed an intuitive <strong>React JS</strong> interface for seamless user interaction.
             </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
 <!-- certifications Section -->
-<section id="certifications" class="certifications-section bg-white">
-  <div class="container">
-    <h2 class="text-center">Certifications</h2>
-    <div class="row">
-      
-      <!-- AWS Cloud Practitioner Certificate -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src='AWS Cloud Practitioner.png' class="card-img-top" alt="AWS Cloud Practitioner Essentials">
-          <div class="card-body">
-            <h5 class="card-title">AWS Cloud Practitioner Essentials</h5>
-            <a href="https://www.yourlink.com/aws-certificate" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Microsoft Fabric Data Engineering -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="Microsoft.png" class="card-img-top" alt="Microsoft Fabric Data Engineering">
-          <div class="card-body">
-            <h5 class="card-title">Microsoft Fabric Data Engineering | Microsoft Learn</h5>
-            <a href="YOUR_MICROSOFT_LEARN_CERTIFICATE_LINK" 
-               class="btn btn-outline-primary" 
-               target="_blank">
+<section class="certifications-section bg-white" id="certifications">
+<div class="container">
+<h2 class="text-center">Certifications</h2><p class="section-intro">Courses, credentials and achievements from my learning journey.</p>
+<div class="row">
+<!-- AWS Cloud Practitioner Certificate -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="AWS Cloud Practitioner Essentials" class="card-img-top" src="AWS Cloud Practitioner.png"/>
+<div class="card-body">
+<h5 class="card-title">AWS Cloud Practitioner Essentials</h5>
+<a aria-disabled="true" class="btn btn-outline-primary disabled" href="#certifications" rel="noopener noreferrer" target="_blank" title="Add your certificate URL here">View Certificate</a>
+</div>
+</div>
+</div>
+<!-- Microsoft Fabric Data Engineering -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="Microsoft Fabric Data Engineering" class="card-img-top" src="Microsoft.png"/>
+<div class="card-body">
+<h5 class="card-title">Microsoft Fabric Data Engineering | Microsoft Learn</h5>
+<a aria-disabled="true" class="btn btn-outline-primary disabled" href="#certifications" target="_blank" title="Add your certificate URL here">
               View Certificate
             </a>
-          </div>
-        </div>
-      </div>
-      <!-- Certificate 1 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src='boot.png' class="card-img-top" alt="Machine Learning and Deep Learning Bootcamp in Python">
-          <div class="card-body">
-            <h5 class="card-title">Machine Learning and Deep Learning Bootcamp in Python</h5>
-            <a href="https://drive.google.com/file/d/1WnDr8_ZWuQSxE1TMto_zb2IjsjtUicGG/view?usp=sharing" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-      </div>
+</div>
+</div>
+</div>
+<!-- Certificate 1 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="Machine Learning and Deep Learning Bootcamp in Python" class="card-img-top" src="boot.png"/>
+<div class="card-body">
+<h5 class="card-title">Machine Learning and Deep Learning Bootcamp in Python</h5>
+<a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1WnDr8_ZWuQSxE1TMto_zb2IjsjtUicGG/view?usp=sharing" rel="noopener noreferrer" target="_blank">View Certificate</a>
+</div>
+</div>
+</div>
 <!-- HIPAA Awareness & Security Training Certificate -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="HIPAA Certificate.png" 
-               class="card-img-top" 
-               alt="HIPAA Awareness and Security Training Certificate">
-      
-          <div class="card-body">
-            <h5 class="card-title">
-              HIPAA Awareness & Security Training
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="HIPAA Awareness and Security Training Certificate" class="card-img-top" src="HIPAA Certificate.png"/>
+<div class="card-body">
+<h5 class="card-title">
+              HIPAA Awareness &amp; Security Training
             </h5>
-      
-            <a href="https://drive.google.com/file/d/1MhYzxqx--9NCUCIet3wPat9448suMNIu/view?usp=sharing" 
-               class="btn btn-outline-primary"
-               target="_blank">
+<a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1MhYzxqx--9NCUCIet3wPat9448suMNIu/view?usp=sharing" rel="noopener noreferrer" target="_blank">
               View Certificate
             </a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 2 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="lee.png" class="card-img-top" alt="LeetCode SQL 50 Challenge – Completed ">
-          <div class="card-body">
-            <h5 class="card-title">LeetCode SQL 50 Challenge – Completed </h5>
-            <a href="https://leetcode.com/medal/?showImg=0&id=6941767&isLevel=false" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 3 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src='HR.png' class="card-img-top" alt="Certified in Python – HackerRank (2023)">
-          <div class="card-body">
-            <h5 class="card-title">Certified in Python – HackerRank (2023)</h5>
-            <a href="https://drive.google.com/file/d/1RuIBZDyoTW_f0-oKFYX1sRWl81MUylNt/view?usp=sharing" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-      </div
-      
-      <!-- Skill 4 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src='SA.png' class="card-img-top" alt="Special Achievers for representing the institute at an International event">
-          <div class="card-body">
-            <h5 class="card-title">Special Achievers for representing the institute at an International event</h5>
-            <a href="https://drive.google.com/file/d/1Q3VbN58FyokFjXbdvnDLWXSp_SgYCPuT/view?usp=sharing" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 5 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src='COA.png' class="card-img-top" alt="Certificate of Appreciation from Students Welfare">
-          <div class="card-body">
-            <h5 class="card-title">Certificate of Appreciation from Students Welfare</h5>
-            <a href="https://drive.google.com/file/d/1z-lp5QdS9l4UBTM_Q7B-ZI9BLZ9zG3O0/view?usp=sharing" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
+<!-- Skill 2 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="LeetCode SQL 50 Challenge – Completed " class="card-img-top" src="lee.png"/>
+<div class="card-body">
+<h5 class="card-title">LeetCode SQL 50 Challenge – Completed </h5>
+<a class="btn btn-outline-primary" href="https://leetcode.com/medal/?showImg=0&amp;id=6941767&amp;isLevel=false" rel="noopener noreferrer" target="_blank">View Certificate</a>
+</div>
+</div>
+</div>
+<!-- Skill 3 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="Certified in Python – HackerRank (2023)" class="card-img-top" src="HR.png"/>
+<div class="card-body">
+<h5 class="card-title">Certified in Python – HackerRank (2023)</h5>
+<a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1RuIBZDyoTW_f0-oKFYX1sRWl81MUylNt/view?usp=sharing" rel="noopener noreferrer" target="_blank">View Certificate</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="Special Achievers for representing the institute at an International event" class="card-img-top" src="SA.png"/>
+<div class="card-body">
+<h5 class="card-title">Special Achievers for representing the institute at an International event</h5>
+<a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1Q3VbN58FyokFjXbdvnDLWXSp_SgYCPuT/view?usp=sharing" rel="noopener noreferrer" target="_blank">View Certificate</a>
+</div>
+</div>
+</div>
+<!-- Skill 5 -->
+<div class="col-lg-3 col-md-6 mb-4">
+<div class="card">
+<img alt="Certificate of Appreciation from Students Welfare" class="card-img-top" src="COA.png"/>
+<div class="card-body">
+<h5 class="card-title">Certificate of Appreciation from Students Welfare</h5>
+<a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1z-lp5QdS9l4UBTM_Q7B-ZI9BLZ9zG3O0/view?usp=sharing" rel="noopener noreferrer" target="_blank">View Certificate</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
 <!-- Projects Section -->
-<section id="projects" class="projects-section bg-light" id="projects">
-  <div class="container">
-    <h2 class="text-center">Projects</h2>
-    <div class="row">
-
-      <!-- Project 7 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="epic-fhir-sandbox.png" class="card-img-top" alt="Epic FHIR Azure Healthcare Data Engineering Platform">
-      
-          <div class="card-body">
-            <h5 class="card-title">Epic FHIR Azure Healthcare Data Engineering Platform</h5>
-      
-            <p class="card-text">
+<section class="projects-section bg-light" id="projects">
+<div class="container">
+<h2 class="text-center">Projects</h2><p class="section-intro">Selected work across data engineering, analytics and applied machine learning.</p>
+<div class="row">
+<!-- Project 7 -->
+<div class="col-md-4 mb-4">
+<div class="card">
+<img alt="Epic FHIR Azure Healthcare Data Engineering Platform" class="card-img-top" src="epic-fhir-sandbox.png"/>
+<div class="card-body">
+<h5 class="card-title">Epic FHIR Azure Healthcare Data Engineering Platform</h5>
+<p class="card-text">
               Built an end-to-end healthcare data platform that ingests synthetic HL7 FHIR R4 data from the Epic Developer Sandbox and processes it through a Bronze → Silver → Gold medallion architecture on Azure. Developed a Python FHIR ingestion pipeline with OAuth 2.0/JWT authentication, pagination, retries, and logging; transformed Patient, Encounter, Condition, MedicationRequest, and Observation data using Databricks and PySpark; and served analytics-ready Gold datasets through Azure Synapse Serverless SQL for downstream BI consumption.
             </p>
-      
-            <p class="card-text">
-              <strong>Technologies:</strong> Python, HL7 FHIR R4, REST APIs, Azure Data Lake Storage Gen2, Azure Databricks, PySpark, Delta Lake, Azure Synapse Analytics, Unity Catalog, Azure RBAC
+<p class="card-text">
+<strong>Technologies:</strong> Python, HL7 FHIR R4, REST APIs, Azure Data Lake Storage Gen2, Azure Databricks, PySpark, Delta Lake, Azure Synapse Analytics, Unity Catalog, Azure RBAC
             </p>
-      
-            <a href="https://github.com/Taranveer-Singh-Gill/epic-fhir-data-platform"
-               class="btn btn-secondary">
+<a class="btn btn-secondary" href="https://github.com/Taranveer-Singh-Gill/epic-fhir-data-platform" rel="noopener noreferrer" target="_blank">
               Source
             </a>
-          </div>
-        </div>
-      </div>
-
-      
-      <!-- Project 6 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="LineageGraph.png" class="card-img-top" alt="HL7 FHIR Healthcare Data Engineering Pipeline">
-          <div class="card-body">
-            <h5 class="card-title">HL7 FHIR Healthcare Data Engineering Pipeline</h5>
-            <p class="card-text">
+</div>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="col-md-4 mb-4">
+<div class="card">
+<img alt="HL7 FHIR Healthcare Data Engineering Pipeline" class="card-img-top" src="LineageGraph.png"/>
+<div class="card-body">
+<h5 class="card-title">HL7 FHIR Healthcare Data Engineering Pipeline</h5>
+<p class="card-text">
               An end-to-end healthcare data engineering pipeline that ingests synthetic HL7 FHIR R4 data and transforms it into analytics-ready models using a Bronze → Silver → Gold medallion architecture. Built a Python and psycopg2 ingestion pipeline to load FHIR NDJSON resources into PostgreSQL JSONB tables, developed dbt staging and dimensional models, and implemented automated data-quality testing and data lineage.
             </p>
-
-            <p class="card-text">
-              <strong>Technologies:</strong> Python, SQL, PostgreSQL, dbt, Docker, HL7 FHIR R4, JSON/JSONB, Git/GitHub
+<p class="card-text">
+<strong>Technologies:</strong> Python, SQL, PostgreSQL, dbt, Docker, HL7 FHIR R4, JSON/JSONB, Git/GitHub
             </p>
-            <a href="https://github.com/Taranveer-Singh-Gill/fhir-project" class="btn btn-secondary">Source</a>
-          </div>
-        </div>
-      </div>      
-      <!-- Project 5 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="output.png" class="card-img-top" alt="Famous Personality Image Classification">
-          <div class="card-body">
-            <h5 class="card-title">Famous Personality Image Classification</h5>
-      
-            <p class="card-text">
+<a class="btn btn-secondary" href="https://github.com/Taranveer-Singh-Gill/fhir-project" rel="noopener noreferrer" target="_blank">Source</a>
+</div>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="col-md-4 mb-4">
+<div class="card">
+<img alt="Famous Personality Image Classification" class="card-img-top" src="output.png"/>
+<div class="card-body">
+<h5 class="card-title">Famous Personality Image Classification</h5>
+<p class="card-text">
               An end-to-end computer vision and machine learning project that classifies facial images of 17 famous personalities. Implemented face and eye detection using OpenCV, applied wavelet-based feature extraction, and trained multiple classification models using Scikit-learn. Performed hyperparameter tuning with GridSearchCV and selected an optimized Support Vector Machine (SVM) model, achieving approximately 64.5% test accuracy.
             </p>
-      
-            <p class="card-text">
-              <strong>Technologies:</strong> Python, OpenCV, Scikit-learn, PyWavelets, NumPy, SVM, GridSearchCV, Jupyter Notebook, Git/GitHub
+<p class="card-text">
+<strong>Technologies:</strong> Python, OpenCV, Scikit-learn, PyWavelets, NumPy, SVM, GridSearchCV, Jupyter Notebook, Git/GitHub
             </p>
-      
-            <a href="https://github.com/Taranveer-Singh-Gill/Famous-Personality-Image-Classification" class="btn btn-secondary">Source</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="post.png" class="card-img-top" alt="Efficient Workforce Management System">
-      
-          <div class="card-body">
-            <h5 class="card-title">Efficient Workforce Management Using Modern Database Architectures</h5>
-      
-            <p class="card-text">
+<a class="btn btn-secondary" href="https://github.com/Taranveer-Singh-Gill/Famous-Personality-Image-Classification" rel="noopener noreferrer" target="_blank">Source</a>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="col-md-4 mb-4">
+<div class="card">
+<img alt="Efficient Workforce Management System" class="card-img-top" src="post.png"/>
+<div class="card-body">
+<h5 class="card-title">Efficient Workforce Management Using Modern Database Architectures</h5>
+<p class="card-text">
               Developed an employee management and workforce analytics system using PostgreSQL and Streamlit. Designed a normalized relational database, implemented SQL queries for employee and payroll analysis, and automated salary auditing and bonus allocation using triggers and stored procedures. Optimized query performance through indexing, reducing execution time by approximately 21.7%, and built an interactive web application for employee management and department analytics.
             </p>
-      
-            <p class="card-text">
-              <strong>Technologies:</strong> Python, SQL, PostgreSQL, Streamlit, Relational Database Design, Indexing, Stored Procedures, Database Triggers, Git/GitHub
+<p class="card-text">
+<strong>Technologies:</strong> Python, SQL, PostgreSQL, Streamlit, Relational Database Design, Indexing, Stored Procedures, Database Triggers, Git/GitHub
             </p>
-      
-            <a href="https://github.com/Taranveer-Singh-Gill/Efficient-Workforce-Management-Using-Modern-Database-Architectures" class="btn btn-secondary">Source</a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="credit-card-dashboard.png"
-               class="card-img-top"
-               alt="Credit Card Complaints Analytics Dashboard">
-      
-          <div class="card-body">
-            <h5 class="card-title">
+<a class="btn btn-secondary" href="https://github.com/Taranveer-Singh-Gill/Efficient-Workforce-Management-Using-Modern-Database-Architectures" rel="noopener noreferrer" target="_blank">Source</a>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="col-md-4 mb-4">
+<div class="card">
+<img alt="Credit Card Complaints Analytics Dashboard" class="card-img-top" src="credit-card-dashboard.png"/>
+<div class="card-body">
+<h5 class="card-title">
               Credit Card Complaints Analytics Dashboard
             </h5>
-      
-            <p class="card-text">
+<p class="card-text">
               Built an interactive Tableau dashboard to analyze 86K+ credit card
               consumer complaints across the United States. Developed KPI tracking
               for complaint volume, rolling 12-month activity, closure rates, and
@@ -597,173 +386,121 @@ html {
               filters and parameters to enable dynamic exploration by year,
               company, and state.
             </p>
-      
-            <p class="card-text">
-              <strong>Technologies:</strong> Tableau Public, Microsoft Excel,
+<p class="card-text">
+<strong>Technologies:</strong> Tableau Public, Microsoft Excel,
               Calculated Fields, Tableau Parameters, Interactive Filters,
               Geospatial Visualization, Data Analytics, Business Intelligence
             </p>
-      
-            <a href="https://github.com/Taranveer-Singh-Gill/credit-card-complaints-tableau-dashboard"
-               class="btn btn-secondary"
-               target="_blank"
-               rel="noopener noreferrer">
+<a class="btn btn-secondary" href="https://github.com/Taranveer-Singh-Gill/credit-card-complaints-tableau-dashboard" rel="noopener noreferrer" target="_blank">
               Source
             </a>
-      
-            <a href="https://public.tableau.com/views/CreditCardTableauDashboard/Dashboard1"
-               class="btn btn-primary"
-               target="_blank"
-               rel="noopener noreferrer">
+<a class="btn btn-primary" href="https://public.tableau.com/views/CreditCardTableauDashboard/Dashboard1" rel="noopener noreferrer" target="_blank">
               Live Dashboard
             </a>
-          </div>
-        </div>
-      </div>
-      
-
-      <!-- Project 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src='drones.png' class="card-img-top" alt="Drones for Cleaning Algae in Water Bodies">
-          <div class="card-body">
-            <h5 class="card-title">Drones for Cleaning Algae in Water Bodies</h5>
-            <p class="card-text">
+</div>
+</div>
+</div>
+<!-- Project 1 -->
+<div class="col-md-4 mb-4">
+<div class="card">
+<img alt="Drones for Cleaning Algae in Water Bodies" class="card-img-top" src="drones.png"/>
+<div class="card-body">
+<h5 class="card-title">Drones for Cleaning Algae in Water Bodies</h5>
+<p class="card-text">
               Developed a quadcopter equipped with a Raspberry Pi camera for real-time algae monitoring. Used OpenCV for image processing and Mission Planner for precise flight path configuration. Conducted thrust, battery, and landing gear analysis to optimize UAV performance. Implemented KMeans clustering and color detection to extract dominant colors and convert RGB values to human-readable names.
             </p>
-            <a href="https://github.com/Taranveer-Singh-Gill/Drones-for-Cleaning-Algae" class="btn btn-secondary">Source</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
+<a class="btn btn-secondary" href="https://github.com/Taranveer-Singh-Gill/Drones-for-Cleaning-Algae" rel="noopener noreferrer" target="_blank">Source</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
-
 <!-- Skills Section -->
-<section id="skills" class="skills-section bg-light">
-  <div class="container">
-    <h2 class="text-center">Skills</h2>
-    <div class="row text-center">
-      
-      <!-- Skill 1 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='Python.png' alt="Python" class="img-fluid mb-2" style="height:60px;">
-        <p>Python</p>
-      </div>
-
-      <!-- Skill 2 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='SQL.png' alt="SQL" class="img-fluid mb-2" style="height:60px;">
-        <p>SQL</p>
-      </div>
-
-      <!-- Skill 3 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='Tableau_logo.png' alt="Tableau" class="img-fluid mb-2" style="height:60px;">
-        <p>Tableau</p>
-      </div>
-
-      <!-- Skill 4 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='ML.jpg' alt="Machine Learning" class="img-fluid mb-2" style="height:60px;">
-        <p>Machine Learning</p>
-      </div>
-
-      <!-- Skill 5 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='Azure.jpeg' alt="Azure" class="img-fluid mb-2" style="height:60px;">
-        <p>Azure</p>
-      </div>
-
-      <!-- Skill 6 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='aws.png' alt="AWS" class="img-fluid mb-2" style="height:60px;">
-        <p>AWS</p>
-      </div>
-
-      <!-- Skill 7 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='hadoop.png' alt="Hadoop" class="img-fluid mb-2" style="height:60px;">
-        <p>Hadoop</p>
-      </div>
-
-      <!-- Skill 8 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='images.png' alt="Spark" class="img-fluid mb-2" style="height:60px;">
-        <p>Spark</p>
-      </div>
-
-      <!-- Skill 9 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='R.png' alt="R" class="img-fluid mb-2" style="height:60px;">
-        <p>R</p>
-      </div>
-
-      <!-- Skill 10 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='MySQL.png' alt="MySQL" class="img-fluid mb-2" style="height:60px;">
-        <p>MySQL</p>
-      </div>
-
-      <!-- Skill 11 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='Postgresql.png' alt="PostgreSQL" class="img-fluid mb-2" style="height:60px;">
-        <p>PostgreSQL</p>
-      </div>
-
-      <!-- Skill 12 -->
-      <div class="col-lg-2 col-md-3 col-4 mb-4">
-        <img src='data-visualization.png' alt="Data Visualization" class="img-fluid mb-2" style="height:60px;">
-        <p>Data Visualization</p>
-      </div>
-
-    </div>
-  </div>
+<section class="skills-section bg-light" id="skills">
+<div class="container">
+<h2 class="text-center">Skills</h2>
+<div class="row text-center">
+<!-- Skill 1 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="Python" class="img-fluid mb-2" src="Python.png" style="height:60px;"/>
+<p>Python</p>
+</div>
+<!-- Skill 2 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="SQL" class="img-fluid mb-2" src="SQL.png" style="height:60px;"/>
+<p>SQL</p>
+</div>
+<!-- Skill 3 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="Tableau" class="img-fluid mb-2" src="Tableau_logo.png" style="height:60px;"/>
+<p>Tableau</p>
+</div>
+<!-- Skill 4 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="Machine Learning" class="img-fluid mb-2" src="ML.jpg" style="height:60px;"/>
+<p>Machine Learning</p>
+</div>
+<!-- Skill 5 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="Azure" class="img-fluid mb-2" src="Azure.jpeg" style="height:60px;"/>
+<p>Azure</p>
+</div>
+<!-- Skill 6 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="AWS" class="img-fluid mb-2" src="aws.png" style="height:60px;"/>
+<p>AWS</p>
+</div>
+<!-- Skill 7 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="Hadoop" class="img-fluid mb-2" src="hadoop.png" style="height:60px;"/>
+<p>Hadoop</p>
+</div>
+<!-- Skill 8 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="Spark" class="img-fluid mb-2" src="images.png" style="height:60px;"/>
+<p>Spark</p>
+</div>
+<!-- Skill 9 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="R" class="img-fluid mb-2" src="R.png" style="height:60px;"/>
+<p>R</p>
+</div>
+<!-- Skill 10 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="MySQL" class="img-fluid mb-2" src="MySQL.png" style="height:60px;"/>
+<p>MySQL</p>
+</div>
+<!-- Skill 11 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="PostgreSQL" class="img-fluid mb-2" src="Postgresql.png" style="height:60px;"/>
+<p>PostgreSQL</p>
+</div>
+<!-- Skill 12 -->
+<div class="col-lg-2 col-md-3 col-4 mb-4">
+<img alt="Data Visualization" class="img-fluid mb-2" src="data-visualization.png" style="height:60px;"/>
+<p>Data Visualization</p>
+</div>
+</div>
+</div>
 </section>
-
-
 <!-- Contact Me Section -->
-<section id="contact" class="contact-section text-center text-white bg-dark">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>
-      <i class="fas fa-envelope"></i> tarangill1104@gmail.com |
+<section class="contact-section text-center text-white bg-dark" id="contact">
+<div class="container">
+<h2>Contact Me</h2>
+<p>
+<i class="fas fa-envelope"></i> tarangill1104@gmail.com |
       <i class="fas fa-phone"></i> +1 716-398-8662 |
-      <a href="https://www.linkedin.com/in/taranveer-singh-gill-398b861a0/" target="_blank" class="text-white">
-        <img src="linkedin.png" alt="LinkedIn" class="social-icon"> LinkedIn
+      <a class="text-white" href="https://www.linkedin.com/in/taranveer-singh-gill-398b861a0/" rel="noopener noreferrer" target="_blank">
+<img alt="LinkedIn" class="social-icon" src="linkedin.png"/> LinkedIn
       </a> |
-      <a href="https://github.com/Taranveer-Singh-Gill" target="_blank" class="text-white">
-        <img src="github.png" alt="GitHub" class="social-icon"> GitHub
+      <a class="text-white" href="https://github.com/Taranveer-Singh-Gill" rel="noopener noreferrer" target="_blank">
+<img alt="GitHub" class="social-icon" src="github.png"/> GitHub
       </a>
-    </p>
-  </div>
+</p>
+<p class="footer-note">© 2026 Taranveer Singh Gill · Built with curiosity and code.</p></div>
 </section>
-
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#home">My Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Work Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
